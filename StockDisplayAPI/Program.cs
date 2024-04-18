@@ -23,7 +23,6 @@ app.MapGet("/StockInformation/{ticker}", (string ticker) =>
 	responseString = reader.ReadToEnd();
 	stream.Close();
 
-	//PolygonIOModel polygonIOModel = JsonConvert.DeserializeObject<PolygonIOModel>(responseString);
 	return responseString;
 });
 
