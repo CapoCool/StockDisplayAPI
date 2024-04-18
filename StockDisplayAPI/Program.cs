@@ -7,6 +7,7 @@ var app = builder.Build();
 
 app.MapGet("/StockInformation/{ticker}", (string ticker) => 
 {
+	//new change here
 	const string KEY = "/range/1/day/2023-01-09/2023-01-20?adjusted=true&sort=asc&limit=120&apiKey=4ZRDH5eAgpcXn74vFSYbkfSPhvRhupM0";
 	const string API_URL_FIRST = "https://api.polygon.io/v2/aggs/ticker/";
 	HttpWebRequest request;
