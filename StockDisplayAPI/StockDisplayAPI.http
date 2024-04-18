@@ -1,0 +1,5 @@
+﻿@StockDisplayAPI_HostAddress = https://localhost:32774/
+
+GET {{StockDisplayAPI_HostAddress}}/StockInformation/{ticker}
+
+###
